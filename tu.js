@@ -47,7 +47,7 @@ var allpages = function(url) {
         var $ = cheerio.load(body);
        // 总页数
          // console.log(url)
-        var allPages = $(".page_input span").text();
+        var allPages = $(".next").html()//.text();
          console.log( allPages);
         // for (var i = 2; i < allPages; i++) {
         //     main_sorts.push(sorts[i].attribs.href);
